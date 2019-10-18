@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	    <meta charset="UTF-8">
+	    <link rel="stylesheet" type="text/css" href="./css/stylesImage.css">
+	    <title>Add image api</title>
+	</head>
+
+	<body>
+
+		<div class="menuImage">
+			<div class="menuImg">
+				<img src="./images/nature.png">
+			</div>
+			<div class="menuForm">
+				<div class="menuName"><h1>Fill the form</h1></div>
+				<form action="/statyva/api/add" method="POST">
+				    <label>Name: <input class="formItem" type="text" name="name" required></label>
+				    <br><br>
+				    <!-- <label>Base64: <input class="formItem" type="text" name="base" required></label> -->
+				    <label>Base64: <textarea class="formItem formItemArea" name="base" required></textarea></label>
+				    <br><br>
+				    <input class="btn" align="center" type="submit" value="Submit">
+				</form>
+			</div>
+		</div>
+
+	</body>
+
+</html>
